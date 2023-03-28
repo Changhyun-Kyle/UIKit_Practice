@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import CoreLocation
 // API Key: 4141e5609096da5c1f14aa0c4101b9ee
 
 protocol WeatherManagerDelegate {
@@ -21,6 +21,11 @@ struct WeatherManager {
     
     func fetchWeather(cityName: String) {
         let urlString = "\(weatherURL)&q=\(cityName)"
+        performRequest(with: urlString)
+    }
+    
+    func fetchWeather(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
+        let urlString = "\(weatherURL)&lat=\(latitude)&lon=\(longitude)"
         performRequest(with: urlString)
     }
     
