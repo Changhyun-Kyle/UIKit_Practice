@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  CoreData_Test
+//  Todoey
 //
-//  Created by 강창현 on 2023/05/01.
+//  Created by 강창현 on 2023/04/27.
 //
 
 import UIKit
@@ -15,9 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        // print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
+        
         return true
     }
-
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        saveContext()
+    }
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
@@ -76,6 +81,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
 }
 

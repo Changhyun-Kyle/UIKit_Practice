@@ -14,6 +14,7 @@
 		277B015E29FA5DE900F713EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277B015D29FA5DE900F713EE /* Assets.xcassets */; };
 		277B016129FA5DE900F713EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277B015F29FA5DE900F713EE /* LaunchScreen.storyboard */; };
 		277B016929FF93A000F713EE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277B016829FF93A000F713EE /* Item.swift */; };
+		277B01B329FFA5C200F713EE /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 277B01B129FFA5C200F713EE /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		277B016029FA5DE900F713EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		277B016229FA5DE900F713EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		277B016829FF93A000F713EE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		277B01B229FFA5C200F713EE /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				277B016829FF93A000F713EE /* Item.swift */,
+				277B01B129FFA5C200F713EE /* DataModel.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				277B016929FF93A000F713EE /* Item.swift in Sources */,
+				277B01B329FFA5C200F713EE /* DataModel.xcdatamodeld in Sources */,
 				277B015929FA5DE600F713EE /* TodoListViewController.swift in Sources */,
 				277B015529FA5DE600F713EE /* AppDelegate.swift in Sources */,
 				277B015729FA5DE600F713EE /* SceneDelegate.swift in Sources */,
@@ -394,6 +398,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		277B01B129FFA5C200F713EE /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				277B01B229FFA5C200F713EE /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 277B01B229FFA5C200F713EE /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 277B014929FA5DE600F713EE /* Project object */;
 }
