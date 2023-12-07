@@ -16,26 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oYH-AB-l2a">
-                                <rect key="frame" x="39" y="79" width="118" height="719"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oYH-AB-l2a">
+                                <rect key="frame" x="20" y="79" width="166.66666666666666" height="719"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="POh-fl-fbK">
-                                <rect key="frame" x="233" y="79" width="118" height="719"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POh-fl-fbK">
+                                <rect key="frame" x="206.66666666666663" y="79" width="166.33333333333337" height="719"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="oYH-AB-l2a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="B6P-Y6-Cgq"/>
-                            <constraint firstItem="oYH-AB-l2a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Hpy-o6-nji"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oYH-AB-l2a" secondAttribute="bottom" constant="20" id="OaF-tp-WX9"/>
-                            <constraint firstItem="POh-fl-fbK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="q3w-Ae-cDg"/>
-                            <constraint firstItem="POh-fl-fbK" firstAttribute="leading" secondItem="oYH-AB-l2a" secondAttribute="trailing" constant="20" id="qem-pT-sRr"/>
-                            <constraint firstItem="POh-fl-fbK" firstAttribute="leading" secondItem="oYH-AB-l2a" secondAttribute="trailing" constant="20" id="tgs-7p-QnG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="POh-fl-fbK" secondAttribute="bottom" constant="20" id="udB-o9-Imc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="POh-fl-fbK" secondAttribute="trailing" constant="20" id="yBt-eT-Uf7"/>
+                            <constraint firstItem="POh-fl-fbK" firstAttribute="leading" secondItem="oYH-AB-l2a" secondAttribute="trailing" constant="20" id="3Xi-Bp-1h7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oYH-AB-l2a" secondAttribute="bottom" constant="20" id="FQN-pg-MZ3"/>
+                            <constraint firstItem="POh-fl-fbK" firstAttribute="width" secondItem="oYH-AB-l2a" secondAttribute="width" id="FkD-bq-e2S"/>
+                            <constraint firstItem="POh-fl-fbK" firstAttribute="top" secondItem="oYH-AB-l2a" secondAttribute="top" id="NKm-HT-Hhr"/>
+                            <constraint firstItem="POh-fl-fbK" firstAttribute="bottom" secondItem="oYH-AB-l2a" secondAttribute="bottom" id="Pdp-ga-NZW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="POh-fl-fbK" secondAttribute="trailing" constant="20" id="WdH-d6-NJS"/>
+                            <constraint firstItem="oYH-AB-l2a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Z2T-cp-Qxl"/>
+                            <constraint firstItem="oYH-AB-l2a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="uqv-Sc-EQ4"/>
                         </constraints>
                     </view>
                 </viewController>
