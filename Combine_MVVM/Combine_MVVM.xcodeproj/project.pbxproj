@@ -14,6 +14,10 @@
 		27EFEA232BBBD2E0004A3426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27EFEA222BBBD2E0004A3426 /* Assets.xcassets */; };
 		27EFEA262BBBD2E0004A3426 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 27EFEA252BBBD2E0004A3426 /* Base */; };
 		27EFEA342BBBDCE5004A3426 /* Combine_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA332BBBDCE5004A3426 /* Combine_MVVMTests.swift */; };
+		27EFEA3B2BBBE307004A3426 /* QuoteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA3A2BBBE307004A3426 /* QuoteViewModel.swift */; };
+		27EFEA3D2BBBE31D004A3426 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA3C2BBBE31D004A3426 /* Quote.swift */; };
+		27EFEA3F2BBBE335004A3426 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA3E2BBBE335004A3426 /* QuoteService.swift */; };
+		27EFEA412BBBE35E004A3426 /* QuoteServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA402BBBE35E004A3426 /* QuoteServiceType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,10 @@
 		27EFEA272BBBD2E0004A3426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27EFEA312BBBDCE5004A3426 /* Combine_MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Combine_MVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27EFEA332BBBDCE5004A3426 /* Combine_MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_MVVMTests.swift; sourceTree = "<group>"; };
+		27EFEA3A2BBBE307004A3426 /* QuoteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewModel.swift; sourceTree = "<group>"; };
+		27EFEA3C2BBBE31D004A3426 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		27EFEA3E2BBBE335004A3426 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		27EFEA402BBBE35E004A3426 /* QuoteServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteServiceType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,13 +86,11 @@
 		27EFEA182BBBD2DD004A3426 /* Combine_MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				27EFEA192BBBD2DD004A3426 /* AppDelegate.swift */,
-				27EFEA1B2BBBD2DD004A3426 /* SceneDelegate.swift */,
-				27EFEA1D2BBBD2DD004A3426 /* QuoteViewController.swift */,
-				27EFEA1F2BBBD2DD004A3426 /* Main.storyboard */,
-				27EFEA222BBBD2E0004A3426 /* Assets.xcassets */,
-				27EFEA242BBBD2E0004A3426 /* LaunchScreen.storyboard */,
-				27EFEA272BBBD2E0004A3426 /* Info.plist */,
+				27EFEA422BBBE38C004A3426 /* App */,
+				27EFEA432BBBE399004A3426 /* Model */,
+				27EFEA442BBBE39F004A3426 /* View */,
+				27EFEA452BBBE3CC004A3426 /* ViewModel */,
+				27EFEA472BBBE425004A3426 /* Resource */,
 			);
 			path = Combine_MVVM;
 			sourceTree = "<group>";
@@ -95,6 +101,60 @@
 				27EFEA332BBBDCE5004A3426 /* Combine_MVVMTests.swift */,
 			);
 			path = Combine_MVVMTests;
+			sourceTree = "<group>";
+		};
+		27EFEA422BBBE38C004A3426 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				27EFEA192BBBD2DD004A3426 /* AppDelegate.swift */,
+				27EFEA1B2BBBD2DD004A3426 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		27EFEA432BBBE399004A3426 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27EFEA3C2BBBE31D004A3426 /* Quote.swift */,
+				27EFEA462BBBE3ED004A3426 /* Network */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27EFEA442BBBE39F004A3426 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27EFEA1F2BBBD2DD004A3426 /* Main.storyboard */,
+				27EFEA1D2BBBD2DD004A3426 /* QuoteViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27EFEA452BBBE3CC004A3426 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				27EFEA3A2BBBE307004A3426 /* QuoteViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		27EFEA462BBBE3ED004A3426 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				27EFEA3E2BBBE335004A3426 /* QuoteService.swift */,
+				27EFEA402BBBE35E004A3426 /* QuoteServiceType.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		27EFEA472BBBE425004A3426 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				27EFEA222BBBD2E0004A3426 /* Assets.xcassets */,
+				27EFEA242BBBD2E0004A3426 /* LaunchScreen.storyboard */,
+				27EFEA272BBBD2E0004A3426 /* Info.plist */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +259,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				27EFEA1E2BBBD2DD004A3426 /* QuoteViewController.swift in Sources */,
+				27EFEA412BBBE35E004A3426 /* QuoteServiceType.swift in Sources */,
+				27EFEA3B2BBBE307004A3426 /* QuoteViewModel.swift in Sources */,
 				27EFEA1A2BBBD2DD004A3426 /* AppDelegate.swift in Sources */,
+				27EFEA3D2BBBE31D004A3426 /* Quote.swift in Sources */,
+				27EFEA3F2BBBE335004A3426 /* QuoteService.swift in Sources */,
 				27EFEA1C2BBBD2DD004A3426 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,7 +433,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Combine_MVVM/Info.plist;
+				INFOPLIST_FILE = Combine_MVVM/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -396,7 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Combine_MVVM/Info.plist;
+				INFOPLIST_FILE = Combine_MVVM/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
