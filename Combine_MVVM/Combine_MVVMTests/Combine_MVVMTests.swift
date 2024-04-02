@@ -6,30 +6,43 @@
 //
 
 import XCTest
+import Combine
+@testable import Combine_MVVM
 
 final class Combine_MVVMTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    var sut: QuoteViewModel!
+    var quoteService: MockQuoteServiceType!
+    private let input: PassthroughSubject<QuoteViewModel.Input, Never> = .init()
+    private var cancellables = Set<AnyCancellable>()
+    
+    override func setUp() {
+        quoteService = MockQuoteServiceType()
+        sut = QuoteViewModel(quoteServiceType: quoteService)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    override func tearDown() {
+        
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func test_a() {
+        let output = sut.transform(input: input.eraseToAnyPublisher())
+        output.sink { event in
+            switch event {
+            case .fetchQuoteDidFail(let error):
+                XCTAssertThrowsError(error)
+            case .fetchQuoteDidSucceed(let quote):
+                XCTAssertNotNil(quote)
+            case .toggleButton(let isEnable):
+                XCTAssertTrue(isEnable)
+            }
+        }.store(in: &cancellables)
     }
+}
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
+final class MockQuoteServiceType: QuoteServiceType {
+    var value: AnyPublisher<Quote,Error>?
+    func getRandomQuote() -> AnyPublisher<Combine_MVVM.Quote, any Error> {
+        return value ?? Empty().eraseToAnyPublisher()
     }
-
 }

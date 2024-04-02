@@ -9,25 +9,45 @@
 /* Begin PBXBuildFile section */
 		27EFEA1A2BBBD2DD004A3426 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA192BBBD2DD004A3426 /* AppDelegate.swift */; };
 		27EFEA1C2BBBD2DD004A3426 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA1B2BBBD2DD004A3426 /* SceneDelegate.swift */; };
-		27EFEA1E2BBBD2DD004A3426 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA1D2BBBD2DD004A3426 /* ViewController.swift */; };
+		27EFEA1E2BBBD2DD004A3426 /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA1D2BBBD2DD004A3426 /* QuoteViewController.swift */; };
 		27EFEA212BBBD2DD004A3426 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 27EFEA202BBBD2DD004A3426 /* Base */; };
 		27EFEA232BBBD2E0004A3426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27EFEA222BBBD2E0004A3426 /* Assets.xcassets */; };
 		27EFEA262BBBD2E0004A3426 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 27EFEA252BBBD2E0004A3426 /* Base */; };
+		27EFEA342BBBDCE5004A3426 /* Combine_MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA332BBBDCE5004A3426 /* Combine_MVVMTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27EFEA352BBBDCE5004A3426 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27EFEA0E2BBBD2DD004A3426 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27EFEA152BBBD2DD004A3426;
+			remoteInfo = Combine_MVVM;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		27EFEA162BBBD2DD004A3426 /* Combine_MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Combine_MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27EFEA192BBBD2DD004A3426 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27EFEA1B2BBBD2DD004A3426 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		27EFEA1D2BBBD2DD004A3426 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27EFEA1D2BBBD2DD004A3426 /* QuoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteViewController.swift; sourceTree = "<group>"; };
 		27EFEA202BBBD2DD004A3426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27EFEA222BBBD2E0004A3426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27EFEA252BBBD2E0004A3426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27EFEA272BBBD2E0004A3426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27EFEA312BBBDCE5004A3426 /* Combine_MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Combine_MVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27EFEA332BBBDCE5004A3426 /* Combine_MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combine_MVVMTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		27EFEA132BBBD2DD004A3426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27EFEA2E2BBBDCE5004A3426 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				27EFEA182BBBD2DD004A3426 /* Combine_MVVM */,
+				27EFEA322BBBDCE5004A3426 /* Combine_MVVMTests */,
 				27EFEA172BBBD2DD004A3426 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				27EFEA162BBBD2DD004A3426 /* Combine_MVVM.app */,
+				27EFEA312BBBDCE5004A3426 /* Combine_MVVMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,13 +80,21 @@
 			children = (
 				27EFEA192BBBD2DD004A3426 /* AppDelegate.swift */,
 				27EFEA1B2BBBD2DD004A3426 /* SceneDelegate.swift */,
-				27EFEA1D2BBBD2DD004A3426 /* ViewController.swift */,
+				27EFEA1D2BBBD2DD004A3426 /* QuoteViewController.swift */,
 				27EFEA1F2BBBD2DD004A3426 /* Main.storyboard */,
 				27EFEA222BBBD2E0004A3426 /* Assets.xcassets */,
 				27EFEA242BBBD2E0004A3426 /* LaunchScreen.storyboard */,
 				27EFEA272BBBD2E0004A3426 /* Info.plist */,
 			);
 			path = Combine_MVVM;
+			sourceTree = "<group>";
+		};
+		27EFEA322BBBDCE5004A3426 /* Combine_MVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				27EFEA332BBBDCE5004A3426 /* Combine_MVVMTests.swift */,
+			);
+			path = Combine_MVVMTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +117,24 @@
 			productReference = 27EFEA162BBBD2DD004A3426 /* Combine_MVVM.app */;
 			productType = "com.apple.product-type.application";
 		};
+		27EFEA302BBBDCE5004A3426 /* Combine_MVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27EFEA372BBBDCE5004A3426 /* Build configuration list for PBXNativeTarget "Combine_MVVMTests" */;
+			buildPhases = (
+				27EFEA2D2BBBDCE5004A3426 /* Sources */,
+				27EFEA2E2BBBDCE5004A3426 /* Frameworks */,
+				27EFEA2F2BBBDCE5004A3426 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27EFEA362BBBDCE5004A3426 /* PBXTargetDependency */,
+			);
+			name = Combine_MVVMTests;
+			productName = Combine_MVVMTests;
+			productReference = 27EFEA312BBBDCE5004A3426 /* Combine_MVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +147,10 @@
 				TargetAttributes = {
 					27EFEA152BBBD2DD004A3426 = {
 						CreatedOnToolsVersion = 15.3;
+					};
+					27EFEA302BBBDCE5004A3426 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 27EFEA152BBBD2DD004A3426;
 					};
 				};
 			};
@@ -116,6 +168,7 @@
 			projectRoot = "";
 			targets = (
 				27EFEA152BBBD2DD004A3426 /* Combine_MVVM */,
+				27EFEA302BBBDCE5004A3426 /* Combine_MVVMTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +184,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27EFEA2F2BBBDCE5004A3426 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +198,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27EFEA1E2BBBD2DD004A3426 /* ViewController.swift in Sources */,
+				27EFEA1E2BBBD2DD004A3426 /* QuoteViewController.swift in Sources */,
 				27EFEA1A2BBBD2DD004A3426 /* AppDelegate.swift in Sources */,
 				27EFEA1C2BBBD2DD004A3426 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		27EFEA2D2BBBDCE5004A3426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27EFEA342BBBDCE5004A3426 /* Combine_MVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27EFEA362BBBDCE5004A3426 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27EFEA152BBBD2DD004A3426 /* Combine_MVVM */;
+			targetProxy = 27EFEA352BBBDCE5004A3426 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		27EFEA1F2BBBD2DD004A3426 /* Main.storyboard */ = {
@@ -339,6 +415,40 @@
 			};
 			name = Release;
 		};
+		27EFEA382BBBDCE5004A3426 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "changhyun-kyle.Combine-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Combine_MVVM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Combine_MVVM";
+			};
+			name = Debug;
+		};
+		27EFEA392BBBDCE5004A3426 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "changhyun-kyle.Combine-MVVMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Combine_MVVM.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Combine_MVVM";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -356,6 +466,15 @@
 			buildConfigurations = (
 				27EFEA2B2BBBD2E0004A3426 /* Debug */,
 				27EFEA2C2BBBD2E0004A3426 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27EFEA372BBBDCE5004A3426 /* Build configuration list for PBXNativeTarget "Combine_MVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27EFEA382BBBDCE5004A3426 /* Debug */,
+				27EFEA392BBBDCE5004A3426 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
